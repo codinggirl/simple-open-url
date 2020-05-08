@@ -1,4 +1,4 @@
-const exec = require('child_process').exec
+const { execFile } = require('child_process')
 
 function _getCommand() {
     const commands = {
@@ -20,7 +20,13 @@ function open(url) {
         console.error(`Your platform ${platform} is not supported, please use other package instead`)
         return
     }
-    exec(`${command} ${url}`)
+
+    if(process.platform === 'win32') {
+        execFile('cmd', [ '/s', '/c', command, url ])
+    } else {
+        execFile(command, [ url ])
+    }
+    
 }
 
 module.exports = open
