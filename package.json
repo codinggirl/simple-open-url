@@ -1,6 +1,6 @@
 {
   "name": "simple-open-url",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A simple cli for open a url from a command line.",
   "main": "lib/open.js",
   "bin": {
