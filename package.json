@@ -2,14 +2,13 @@
   "name": "simple-open-url",
   "version": "2.2.0",
   "description": "A simple cli for open a url from a command line.",
-  "main": "src/open.js",
+  "main": "lib/open.js",
   "bin": {
-    "simple-open-url": "src/cli.js"
+    "simple-open-url": "lib/cli.js",
+    "browse": "lib/cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:single": "node src/cli.js https://github.com/codinggirl/simple-open-url#single",
-    "test:multiple": "node src/cli.js https://github.com/codinggirl/simple-open-url#multiple-1 https://github.com/codinggirl/simple-open-url#multiple2"
+    "test": "jest"
   },
   "keywords": [
     "simple-open-url",
@@ -26,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/codinggirl/simple-open-url/issues"
   },
-  "homepage": "https://github.com/codinggirl/simple-open-url#readme"
+  "homepage": "https://github.com/codinggirl/simple-open-url#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "http-server": "^0.12.3",
+    "jest": "^26.0.1",
+    "jsdoc": "^3.6.4"
+  }
 }
