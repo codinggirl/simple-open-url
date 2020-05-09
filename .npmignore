@@ -5,4 +5,9 @@
 .gitignore
 .npmignore
 
-node_modules
+.esdoc.json
+.whitesource
+
+docs/
+node_modules/
+**/*.test.js
