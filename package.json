@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/codinggirl/simple-open-url#readme",
   "devDependencies": {
-    "@types/jest": "^25.2.1",
+    "@types/jest": "^26.0.0",
     "http-server": "^0.12.3",
     "jest": "^26.0.1",
     "jsdoc": "^3.6.4"
