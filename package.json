@@ -8,7 +8,9 @@
     "browse": "lib/cli.js"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "docs:make": "jsdoc --readme README.md lib -r -d docs-api --debug",
+    "docs:preview": "serve docs-api"
   },
   "keywords": [
     "simple-open-url",
@@ -28,6 +30,7 @@
   "homepage": "https://github.com/codinggirl/simple-open-url#readme",
   "devDependencies": {
     "jest": "^26.0.1",
-    "jsdoc": "^3.6.4"
+    "jsdoc": "^3.6.4",
+    "serve": "^11.3.2"
   }
 }
