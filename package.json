@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/codinggirl/simple-open-url#readme",
   "devDependencies": {
-    "jest": "^26.0.1",
+    "jest": "^27.0.5",
     "jsdoc": "^3.6.4",
     "serve": "^11.3.2"
   }
